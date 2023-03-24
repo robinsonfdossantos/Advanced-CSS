@@ -1,0 +1,302 @@
+:root {
+    --moss: rgb(179, 210, 179);
+    --work-border: rgb(16, 88, 73);
+    --white: #ffffff;
+    --contrast: rgba(143, 164, 143, 0.422);
+    --shadow: #f02a2a;
+    --border-evidence: rgb(45, 239, 45);
+  }
+
+  ::selection {
+    color: var(--moss);
+    color: var(--work-border);
+  }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: cursive;
+}
+
+p {
+    font-size: 16px;
+    font-family: Georgia, serif;
+}
+
+h1{
+    font-size: 48px;
+}
+
+h2, h3 {
+    font-family: cursive;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 20px;
+    background-color: rgb(2, 60, 20);
+    color: var(--white);
+    flex-wrap: wrap;
+}
+
+header h1 { 
+    display: flex;
+    display: inline-block; 
+    padding: 15px 15px 15px 60px;
+    background-color: var(--contrast);
+    border-radius: 0px 30px 30px 0px;
+}
+
+header nav {
+    padding-top: 50px;
+    margin-right: 20px;
+    justify-content: flex-end;
+    font-size: 25px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.subtitle { 
+    display: flex;
+    height: 250px;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 30px;
+    flex-wrap: wrap;
+    background-image: url("../images/subtitle.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.subtitle img {
+    display: flex;
+    height: 100%;
+}
+
+.subtitle h2 {
+    display: flex;
+    font-size: 45px;
+    color: var(--moss);
+    margin-top: 80px;
+    margin-right: 500px
+}
+
+body { 
+    width: 100%;
+    height: 100%;
+    background-color: rgb(160, 241, 160);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.personal-info {
+    flex-direction: column;
+    width: 100%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.aboutme {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+section h2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 15%;
+    font-size: 34px;
+    padding-right: 10px;
+}
+
+.description {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 30px;
+    border-left: 5px solid var(--work-border);
+}
+
+.work {
+    display: flex;
+    width: 100%;
+    padding-bottom: 25px;
+    align-items: flex-start;
+    flex-direction: row;
+} 
+
+.content {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    flex-wrap: wrap;
+    border-left: 5px solid var(--work-border);
+}
+
+.surf-report {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-style: solid;
+    border-color: var(--work-border);
+    border-radius: 30px;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px; 
+    margin-bottom: 20px;
+    color: var(--white);
+    background-image: url("../images/mern-surf-report.jpg");
+    box-shadow: 15px 15px 15px var(--shadow);
+}
+
+.led-wall {
+    display: flex;
+    width: 48.5%;
+    height: 150px;
+    padding: 20px 20px 20px;
+    border-style: solid;
+    border-color: var(--work-border);
+    border-radius: 30px;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    margin-right: 1.5%;
+    margin-bottom: 20px;
+    color: var(--white);
+    background-image: url("../images/led-wall.jpg");
+    box-shadow: 10px 15px 20px var(--shadow);
+}
+
+.calculator {
+    display: flex;
+    width: 48.5%;
+    height: 150px;
+    padding: 20px 20px 20px;
+    border-style: solid;
+    border-color: var(--work-border);
+    border-radius: 30px;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    margin-left: 1.5%;
+    margin-bottom: 20px;
+    color: var(--white);
+    background-image: url("../images/calculator.jpg");
+    box-shadow: 10px 15px 20px var(--shadow);
+}
+
+.pastel-puzzels {
+    display: flex;
+    width: 48.5%;
+    height: 150px;
+    padding: 20px 20px 20px;
+    border-style: solid;
+    border-color: var(--work-border);
+    border-radius: 30px;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 1.5%;
+    color: var(--white);
+    background-image: url("../images/puzzle.jpg");
+    box-shadow: 10px 15px 20px var(--shadow);
+}
+
+.run-boddy {
+    display: flex;
+    width: 48.5%;
+    height: 150px;
+    padding: 20px 20px 20px;
+    border-style: solid;
+    border-color: var(--work-border);
+    border-radius: 30px;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 1.5%;
+    color: var(--white);
+    background-image: url("../images/run-boddy.jpg");
+    box-shadow: 10px 15px 20px var(--shadow);
+}
+
+.contactme {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px; 
+}
+
+.contactme nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    border-left: 5px solid var(--work-border);
+}
+
+.contactme nav ul {
+    display: flex;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.contactme nav ul li {
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.contactme u {
+    color: var(--white);
+}
+
+header nav ul li a:hover,
+.contactme u:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: red;
+}
+
+.surf-report:hover,
+.led-wall:hover, .calculator:hover, .pastel-puzzels:hover, .run-boddy:hover {
+  box-shadow: inset 0px 0px 22px var(--border-evidence) , 0 0 45px var(--border-evidence);
+}
+
+.surf-report:active {
+    font-size: 180%;
+    box-shadow: 0 0 60px var(--border-evidence) inset;
+}
+
+header:active, .led-wall:active,
+.calculator:active, .pastel-puzzels:active, .run-boddy:active{
+    font-size: 150%;
+    box-shadow: 0 0 40px var(--border-evidence) inset;
+}
