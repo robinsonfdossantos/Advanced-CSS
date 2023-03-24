@@ -25,12 +25,12 @@ a {
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
     font-family: Georgia, serif;
 }
 
 h1{
-    font-size: 48px;
+    font-size: 32px;
 }
 
 h2, h3 {
@@ -38,7 +38,7 @@ h2, h3 {
 }
 
 h3 {
-    font-size: 23px;
+    font-size: 25px;
 }
 
 header { 
@@ -53,16 +53,16 @@ header {
 header h1 { 
     display: flex;
     display: inline-block; 
-    padding: 15px 15px 15px 60px;
+    padding: 15px 15px 15px 25px;
     background-color: var(--contrast);
     border-radius: 0px 30px 30px 0px;
 }
 
 header nav {
-    padding-top: 50px;
+    padding-top: 25px;
     margin-right: 20px;
     justify-content: flex-end;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 header nav ul {
@@ -73,15 +73,14 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .subtitle { 
     display: flex;
     height: 250px;
-    justify-content: space-between;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     padding: 30px;
     flex-wrap: wrap;
     background-image: url("../images/subtitle.jpg");
@@ -94,71 +93,69 @@ header nav ul li {
     height: 100%;
 }
 
+.img-float-right {
+    float: right;
+    margin-left: -800px;
+}
+
 .subtitle h2 {
     display: flex;
-    font-size: 45px;
+    font-size: 30px;
     color: var(--moss);
     margin-top: 80px;
-    margin-right: 500px
+    margin-left: 50px;
 }
 
 body { 
-    width: 100%;
-    height: 100%;
     background-color: rgb(160, 241, 160);
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
 .personal-info {
+    display: flex;
     flex-direction: column;
     width: 100%;
     display: inline-block;
-    margin-left: 20px;
 }
 
-.aboutme {
-    width: 100%;
+section h3 {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 25px;
-}
-
-section h2 {
-    display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     width: 15%;
-    font-size: 34px;
-    padding-right: 10px;
+    padding: 10px;
+}
+
+.aboutme,
+ .work, .contactme {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+}
+
+.personal-info h3{
+    width: 100%;
 }
 
 .description {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: flex-end;
-    padding: 30px;
-    border-left: 5px solid var(--work-border);
+    padding: 10px;
+    border-top: 5px solid var(--work-border);
 }
-
-.work {
-    display: flex;
-    width: 100%;
-    padding-bottom: 25px;
-    align-items: flex-start;
-    flex-direction: row;
-} 
 
 .content {
     display: flex;
-    width: 100%;
-    padding: 30px;
+    width: 90%;
+    padding: 20px;
     flex-wrap: wrap;
-    border-left: 5px solid var(--work-border);
+    border-top: 5px solid var(--work-border);
 }
 
 .surf-report {
@@ -223,7 +220,9 @@ section h2 {
     border-radius: 30px;
     flex-direction: column;
     justify-content: flex-end;
+    padding-bottom: 20px;
     margin-right: 1.5%;
+    margin-bottom: 20px;
     color: var(--white);
     background-image: url("../images/puzzle.jpg");
     box-shadow: 10px 15px 20px var(--shadow);
@@ -239,31 +238,26 @@ section h2 {
     border-radius: 30px;
     flex-direction: column;
     justify-content: flex-end;
+    padding-bottom: 20px;
     margin-left: 1.5%;
+    margin-bottom: 20px;
     color: var(--white);
     background-image: url("../images/run-boddy.jpg");
     box-shadow: 10px 15px 20px var(--shadow);
 }
 
-.contactme {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 25px; 
-}
-
 .contactme nav {
     display: flex;
-    width: 100%;
-    justify-content: center;
-    padding-top: 50px;
-    font-size: 20px;
     flex-wrap: wrap;
-    border-left: 5px solid var(--work-border);
+    width: 90%;
+    justify-content: center;
+    padding: 20px;
+    font-size: 18px;
+    flex-wrap: wrap;
+    border-top: 5px solid var(--work-border);
 }
 
 .contactme nav ul {
-    display: flex;
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
@@ -300,3 +294,61 @@ header:active, .led-wall:active,
     font-size: 150%;
     box-shadow: 0 0 40px var(--border-evidence) inset;
 }
+
+@media screen and (min-width: 796px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header nav {
+        font-size: 22px;
+    }
+
+    .subtitle {
+        justify-content: space-between;
+        padding-right: 250px;
+    }
+
+    .subtitle h2{
+        justify-content: center;
+    }
+
+    main {
+        justify-content: space-between;
+    }
+
+    .aboutme, .work, .contactme {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        padding-bottom: 25px;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .personal-info h3 {
+        width: 25%;
+        font-size: 32px;
+        justify-content: flex-start;
+        padding-left: 30px;
+    }
+
+    .description, .content, .contactme nav {
+        border-top: none;
+        border-left: 5px solid var(--work-border);
+        width: 100%;
+        padding-right: 30px;
+    }
+    
+    .contactme nav {
+        flex-wrap: nowrap;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .contactme nav ul li {
+        margin-left: 30px;
+        padding-bottom: 12px;
+    }
+    
+  }
