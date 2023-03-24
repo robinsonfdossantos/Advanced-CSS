@@ -93,11 +93,6 @@ header nav ul li {
     height: 100%;
 }
 
-.img-float-right {
-    float: right;
-    margin-left: -800px;
-}
-
 .subtitle h2 {
     display: flex;
     font-size: 30px;
