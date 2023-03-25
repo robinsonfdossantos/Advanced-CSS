@@ -27,6 +27,7 @@ a {
 p {
     font-size: 14px;
     font-family: Georgia, serif;
+    padding: 5px;
 }
 
 h1{
@@ -34,7 +35,7 @@ h1{
 }
 
 h2, h3 {
-    font-family: cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h3 {
@@ -43,7 +44,6 @@ h3 {
 
 header { 
     display: flex;
-    justify-content: space-between;
     padding: 20px 0px 20px;
     background-color: rgb(2, 60, 20);
     color: var(--white);
@@ -62,7 +62,7 @@ header nav {
     padding-top: 25px;
     margin-right: 20px;
     justify-content: flex-end;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 header nav ul {
@@ -78,7 +78,8 @@ header nav ul li {
 
 .subtitle { 
     display: flex;
-    height: 250px;
+    justify-content: flex-start;
+    height: 150px;
     width: 100%;
     margin-bottom: 5px;
     padding: 30px;
@@ -88,17 +89,18 @@ header nav ul li {
     background-position: center;
 }
 
-.subtitle img {
-    display: flex;
-    height: 100%;
+#round-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
 }
 
 .subtitle h2 {
     display: flex;
-    font-size: 30px;
+    font-size: 25px;
     color: var(--moss);
-    margin-top: 80px;
     margin-left: 50px;
+    align-items: center;
 }
 
 body { 
@@ -139,10 +141,15 @@ section h3 {
 
 .description {
     display: flex;
+    flex-direction: column;
     width: 90%;
     justify-content: flex-end;
     padding: 10px;
     border-top: 5px solid var(--work-border);
+}
+
+.description p{
+    text-align: justify;
 }
 
 .content {
@@ -167,6 +174,16 @@ section h3 {
     color: var(--white);
     background-image: url("../images/mern-surf-report.jpg");
     box-shadow: 15px 15px 15px var(--shadow);
+}
+
+.surf-report-background {
+    width: 100%;
+    height: 300px;
+}
+
+.led-calc-puzzle-run-background {
+    width: 100%;
+    height: 150px;
 }
 
 .led-wall {
@@ -245,8 +262,9 @@ section h3 {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 20px;
+    padding-bottom: 5px;
     font-size: 18px;
     flex-wrap: wrap;
     border-top: 5px solid var(--work-border);
@@ -256,27 +274,50 @@ section h3 {
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .contactme nav ul li {
-    display: inline-block;
-    margin-left: 80px;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 3px;
 }
 
 .contactme u {
-    color: var(--white);
+    color: black;
+}
+
+footer {
+    padding: 15px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+/* Defines the styles to what have been inputed between <h2></h2> */
+footer h5 {
+    font-size: 18px;
+    border-top: 3px solid var(--work-border);
+    padding-top: 15px;
+}
+
+header li:hover,
+.contactme li:hover {
+    transition: all .2s;
+    transform: scale(1.15); 
 }
 
 header nav ul li a:hover,
 .contactme u:hover {
     text-decoration: none;
-    cursor: pointer;
     color: red;
 }
 
 .surf-report:hover,
 .led-wall:hover, .calculator:hover, .pastel-puzzels:hover, .run-boddy:hover {
   box-shadow: inset 0px 0px 22px var(--border-evidence) , 0 0 45px var(--border-evidence);
+  transition: all .2s ease-in-out;
+  transform: scale(1.02); 
 }
 
 .surf-report:active {
@@ -290,7 +331,10 @@ header:active, .led-wall:active,
     box-shadow: 0 0 40px var(--border-evidence) inset;
 }
 
-@media screen and (min-width: 796px) {
+@media screen and (min-width: 838px) {
+    p{
+        font-size: 16px;
+    }
     header {
         justify-content: space-between;
     }
@@ -300,16 +344,23 @@ header:active, .led-wall:active,
     }
 
     .subtitle {
-        justify-content: space-between;
+        display: flex;
+        height: 200px;
+        
         padding-right: 250px;
+        margin-bottom: 25px;
+    }
+
+    #round-img{
+        display: flex;
+        height: 150px;
+        width: 150px;
+        justify-content: flex-start;
     }
 
     .subtitle h2{
         justify-content: center;
-    }
-
-    main {
-        justify-content: space-between;
+        font-size: 40px;
     }
 
     .aboutme, .work, .contactme {
@@ -346,4 +397,24 @@ header:active, .led-wall:active,
         padding-bottom: 12px;
     }
     
+  }
+
+  @media screen and (min-width: 1137px) {
+    .personal-info h3 {
+        width: 19%;
+        font-size: 36px;
+        justify-content: flex-start;
+        padding-left: 30px;
+    }
+
+    .contactme nav {
+        justify-content: center;
+    }
+
+  }
+
+  @media screen and (min-width: 1643px) {
+    .personal-info h3 {
+        width: 15%;
+    }
   }
