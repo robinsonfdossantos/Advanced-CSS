@@ -172,18 +172,28 @@ section h3 {
     padding: 30px; 
     margin-bottom: 20px;
     color: var(--white);
-    background-image: url("../images/mern-surf-report.jpg");
+    background-image: url("../images/project1.jpg");
     box-shadow: 15px 15px 15px var(--shadow);
 }
 
 .surf-report-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 100%;
     height: 300px;
+    padding: 30px;
+    border-radius: 30px;
 }
 
 .led-calc-puzzle-run-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 100%;
-    height: 150px;
+    height: 100%S;
+    padding-bottom: 30px;
+    border-radius: 30px;
 }
 
 .led-wall {
@@ -326,7 +336,7 @@ header nav ul li a:hover,
 }
 
 header:active, .led-wall:active,
-.calculator:active, .pastel-puzzels:active, .run-boddy:active{
+.calculator:active, .pastel-puzzels:active, .run-boddy:active {
     font-size: 150%;
     box-shadow: 0 0 40px var(--border-evidence) inset;
 }
@@ -399,6 +409,10 @@ header:active, .led-wall:active,
     
   }
 
+  @media screen and (max-width: 430px) {
+    
+  }
+
   @media screen and (min-width: 1137px) {
     .personal-info h3 {
         width: 19%;
@@ -418,3 +432,4 @@ header:active, .led-wall:active,
         width: 15%;
     }
   }
+
